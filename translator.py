@@ -8,10 +8,10 @@ nombre banco
     fecha | codigo | concepto | debito | credito | saldo
 """
 if __name__ == '__main__':
-    banks = ['supervielle']
+    banks = ['supervielle', 'bbva']
     for bank in banks:
-        extract_data = read_extract('supervielle')
-        concepts_bank = read_concept('supervielle')
+        extract_data = read_extract(bank)
+        concepts_bank = read_concept(bank)
         with open(f'swap/translations/{bank}.csv', 'w', newline='\n') as transaltion:
             fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
             csv = DictWriter(transaltion, fieldnames=fieldnames)
