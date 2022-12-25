@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "swap"
+version = "0.1.0"
+description = "Banks financial extracts translator to universal format"
+authors = ["elbrujo"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
