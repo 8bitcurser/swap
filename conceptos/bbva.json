@@ -1,7 +1,9 @@
 {
     "026": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "INTERES COBR"
+        ]
     },
     "030": {
         "code": "@",
@@ -11,19 +13,27 @@
     },
     "101": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "COMISION MAN 07/22"
+        ]
     },
     "122": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "INT.COB.ACUE"
+        ]
     },
     "123": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "AJ.IN.COB.AC"
+        ]
     },
     "129": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "TRF  IN COEL"
+        ]
     },
     "136": {
         "code": "@",
@@ -81,7 +91,9 @@
     },
     "695": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "MANT. FRANCE TARIF-08"
+        ]
     },
     "767": {
         "code": "@",
@@ -103,7 +115,9 @@
     },
     "879": {
         "code": "@",
-        "concepts": []
+        "concepts": [
+            "OG-DEBITO    HABERES OL"
+        ]
     },
     "896": {
         "code": "@",

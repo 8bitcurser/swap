@@ -15,6 +15,7 @@ def extract():
                 concepts[line['Codigo']]['concepts'].add(curated_concept)
             else:
                 concepts[line['Codigo']]['concepts'] = set()
+                concepts[line['Codigo']]['concepts'].add(curated_concept)
             concepts[line['Codigo']]['code'] = '@'
         
         for concept in concepts:
