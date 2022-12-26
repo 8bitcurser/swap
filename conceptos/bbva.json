@@ -1,146 +1,98 @@
 {
     "026": {
-        "code": "@",
-        "concepts": [
-            "INTERES COBR"
-        ]
+        "code": 1,
+        "concepts": "INTERES COBR"
     },
     "030": {
-        "code": "@",
-        "concepts": [
-            "SELLADO"
-        ]
+        "code": 10,
+        "concepts": "SELLADO"
     },
     "101": {
-        "code": "@",
-        "concepts": [
-            "COMISION MAN 07/22"
-        ]
+        "code": 4,
+        "concepts": "COMISION MAN"
     },
     "122": {
-        "code": "@",
-        "concepts": [
-            "INT.COB.ACUE"
-        ]
+        "code": 1,
+        "concepts": "INT.COB.ACUE"
     },
     "123": {
-        "code": "@",
-        "concepts": [
-            "AJ.IN.COB.AC"
-        ]
+        "code": 1,
+        "concepts": "AJ.IN.COB.AC"
     },
     "129": {
         "code": "@",
-        "concepts": [
-            "TRF  IN COEL"
-        ]
+        "concepts": "TRF  IN COEL"
     },
     "136": {
         "code": "@",
-        "concepts": [
-            "TRANSF.BANEL"
-        ]
+        "concepts": "TRANSF.BANEL"
     },
     "241": {
         "code": "@",
-        "concepts": [
-            "COMISION TRA"
-        ]
+        "concepts": "COMISION TRA"
     },
     "319": {
         "code": "@",
-        "concepts": [
-            "TRANSFERENCI"
-        ]
+        "concepts": "TRANSFERENCI"
     },
     "381": {
         "code": "@",
-        "concepts": [
-            "PAGOS AFIP   VEP"
-        ]
+        "concepts": "PAGOS AFIP   VEP"
     },
     "515": {
         "code": "@",
-        "concepts": [
-            "CP-VISA-INDI"
-        ]
+        "concepts": "CP-VISA-INDI"
     },
     "543": {
-        "code": "@",
-        "concepts": [
-            "PERCEPCION I"
-        ]
+        "code": [8, 12],
+        "concepts": "PERCEPCION I"
     },
     "550": {
-        "code": "@",
-        "concepts": [
-            "REG REC SIRC  S"
-        ]
+        "code": 9,
+        "concepts": "REG REC SIRC  S"
     },
     "589": {
-        "code": "@",
-        "concepts": [
-            "IMPUESTO LEY"
-        ]
+        "code": 7,
+        "concepts": "IMPUESTO LEY"
     },
     "609": {
-        "code": "@",
-        "concepts": [
-            "LEY NRO 25.4"
-        ]
+        "code": 6,
+        "concepts": "LEY NRO 25.4"
     },
     "695": {
-        "code": "@",
-        "concepts": [
-            "MANT. FRANCE TARIF-08"
-        ]
+        "code": 4,
+        "concepts": "MANT. FRANCE TARIF"
     },
     "767": {
         "code": "@",
-        "concepts": [
-            "UG-DEBITO CU"
-        ]
+        "concepts": "UG-DEBITO CU"
     },
     "806": {
-        "code": "@",
-        "concepts": [
-            "IVA TASA GRA"
-        ]
+        "code": [2, 12],
+        "concepts": "IVA TASA GRA"
     },
     "807": {
-        "code": "@",
-        "concepts": [
-            "IVA ACRECENT"
-        ]
+        "code": [3, 12],
+        "concepts": "IVA ACRECENT"
     },
     "879": {
         "code": "@",
-        "concepts": [
-            "OG-DEBITO    HABERES OL"
-        ]
+        "concepts": "OG-DEBITO    HABERES OL"
     },
     "896": {
-        "code": "@",
-        "concepts": [
-            "LR-COMISIONE"
-        ]
+        "code": 12,
+        "concepts": "LR-COMISIONE"
     },
     "898": {
-        "code": "@",
-        "concepts": [
-            "LR-INTERESES"
-        ]
+        "code": 12,
+        "concepts": "LR-INTERESES"
     },
     "902": {
-        "code": "@",
-        "concepts": [
-            "LR-ACREDITAC"
-        ]
+        "code": 12,
+        "concepts": "LR-ACREDITAC"
     },
     "908": {
-        "code": "@",
-        "concepts": [
-            "LR-IMPUESTOS IMPUESTOS"
-        ]
+        "code": 12,
+        "concepts": "LR-IMPUESTOS IMPUESTOS"
     }
 }

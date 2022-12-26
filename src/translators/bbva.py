@@ -1,7 +1,7 @@
 from csv import DictWriter
 
-from helpers import read_concept, read_extract
-from constants import concepts
+from src.helpers import read_concept, read_extract
+from src.constants import concepts
 
 """
 nombre banco
@@ -12,22 +12,33 @@ def translate():
     for bank in banks:
         extract_data = read_extract(bank)
         concepts_bank = read_concept(bank)
-        concepts_keys = list(concepts_bank.keys())
         with open(f'translations/{bank}.csv', 'w', newline='\n') as transaltion:
             fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
             csv = DictWriter(transaltion, fieldnames=fieldnames)
             csv.writeheader()
+            watch_flag = False
             for line in extract_data:
-
-                codigo = concepts_bank.get(line['Concepto'])
-                if codigo is None:
+                code_map = concepts_bank[line['Codigo']]
+                code = code_map['code']
+                # ignore undefined ones
+                if isinstance(code, str):
                     continue
-                concepto = concepts[codigo]
+                # bbva triad activates
+                if code == '898':
+                    watch_flag = True
+                # deactivate flag when triad or duo is over
+                if watch_flag and isinstance(code, int):
+                    watch_flag = False
+                # if triad activated use correct code if not default to normal
+                if isinstance(code, list) and watch_flag:
+                    code = code[1]
+                elif isinstance(code, list) and not watch_flag:
+                    code = code[0]
                 csv.writerow(
                     {
                         'fecha': line['Fecha'],
-                        'codigo': codigo,
-                        'concepto': concepto,
+                        'codigo': code,
+                        'concepto': concepts[str(code)],
                         'debito': line['Débito'],
                         'credito': line['Crédito'],
                         'saldo': line['Saldo']

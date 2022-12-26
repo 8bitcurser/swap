@@ -10,16 +10,9 @@ def extract():
     with open(f'conceptos/bbva.json', 'w') as conceptos:
         for line in data:
             curated_concept = re.sub(r'(\d+/\d+/\d+)|(\d{3,})', '', line['Concepto']).strip()
-            previous_concepts = concepts[line['Codigo']].get('concepts')
-            if previous_concepts is not None:
-                concepts[line['Codigo']]['concepts'].add(curated_concept)
-            else:
-                concepts[line['Codigo']]['concepts'] = set()
-                concepts[line['Codigo']]['concepts'].add(curated_concept)
+            concepts[line['Codigo']]['concepts'] = curated_concept
             concepts[line['Codigo']]['code'] = '@'
         
-        for concept in concepts:
-            concepts[concept]['concepts'] = list(concepts[concept]['concepts'])
         conceptos.write(dumps(concepts, sort_keys=True, indent=4))
     
     print(f"Done extracting curated concepts for bbva")
