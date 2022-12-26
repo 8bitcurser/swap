@@ -1,19 +1,132 @@
 {
-    "LEY NRO 25.4": 6,
-    "REG REC SIRC  S": 9,
-    "LR-INTERESES": 12,
-    "IMPUESTO LEY": 7,
-    "AJ.IN.COB.AC": 1,
-    "IVA TASA GRA": 2 / 12,
-    "LR-IMPUESTOS IMPUESTOS": 12,
-    "MANT. FRANCE TARIF": 4,
-    "LR-ACREDITAC": 12,
-    "COMISION MAN": 4,
-    "PERCEPCION I": 12 / 8,
-    "COMISION TRA": 4,
-    "SELLADO": 10,
-    "INT.COB.ACUE": 1,
-    "IVA ACRECENT": 3 / 12,
-    "LR-COMISIONE": 12,
-    "INTERES COBR": 1
+    "026": {
+        "code": "@",
+        "concepts": []
+    },
+    "030": {
+        "code": "@",
+        "concepts": [
+            "SELLADO"
+        ]
+    },
+    "101": {
+        "code": "@",
+        "concepts": []
+    },
+    "122": {
+        "code": "@",
+        "concepts": []
+    },
+    "123": {
+        "code": "@",
+        "concepts": []
+    },
+    "129": {
+        "code": "@",
+        "concepts": []
+    },
+    "136": {
+        "code": "@",
+        "concepts": [
+            "TRANSF.BANEL"
+        ]
+    },
+    "241": {
+        "code": "@",
+        "concepts": [
+            "COMISION TRA"
+        ]
+    },
+    "319": {
+        "code": "@",
+        "concepts": [
+            "TRANSFERENCI"
+        ]
+    },
+    "381": {
+        "code": "@",
+        "concepts": [
+            "PAGOS AFIP   VEP"
+        ]
+    },
+    "515": {
+        "code": "@",
+        "concepts": [
+            "CP-VISA-INDI"
+        ]
+    },
+    "543": {
+        "code": "@",
+        "concepts": [
+            "PERCEPCION I"
+        ]
+    },
+    "550": {
+        "code": "@",
+        "concepts": [
+            "REG REC SIRC  S"
+        ]
+    },
+    "589": {
+        "code": "@",
+        "concepts": [
+            "IMPUESTO LEY"
+        ]
+    },
+    "609": {
+        "code": "@",
+        "concepts": [
+            "LEY NRO 25.4"
+        ]
+    },
+    "695": {
+        "code": "@",
+        "concepts": []
+    },
+    "767": {
+        "code": "@",
+        "concepts": [
+            "UG-DEBITO CU"
+        ]
+    },
+    "806": {
+        "code": "@",
+        "concepts": [
+            "IVA TASA GRA"
+        ]
+    },
+    "807": {
+        "code": "@",
+        "concepts": [
+            "IVA ACRECENT"
+        ]
+    },
+    "879": {
+        "code": "@",
+        "concepts": []
+    },
+    "896": {
+        "code": "@",
+        "concepts": [
+            "LR-COMISIONE"
+        ]
+    },
+    "898": {
+        "code": "@",
+        "concepts": [
+            "LR-INTERESES"
+        ]
+    },
+    "902": {
+        "code": "@",
+        "concepts": [
+            "LR-ACREDITAC"
+        ]
+    },
+    "908": {
+        "code": "@",
+        "concepts": [
+            "LR-IMPUESTOS IMPUESTOS"
+        ]
+    }
 }

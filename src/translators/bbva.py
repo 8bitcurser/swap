@@ -7,16 +7,18 @@ from constants import concepts
 nombre banco
     fecha | codigo | concepto | debito | credito | saldo
 """
-if __name__ == '__main__':
-    banks = ['supervielle', 'bbva']
+def translate():
+    banks = ['bbva']
     for bank in banks:
         extract_data = read_extract(bank)
         concepts_bank = read_concept(bank)
-        with open(f'swap/translations/{bank}.csv', 'w', newline='\n') as transaltion:
+        concepts_keys = list(concepts_bank.keys())
+        with open(f'translations/{bank}.csv', 'w', newline='\n') as transaltion:
             fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
             csv = DictWriter(transaltion, fieldnames=fieldnames)
             csv.writeheader()
             for line in extract_data:
+
                 codigo = concepts_bank.get(line['Concepto'])
                 if codigo is None:
                     continue
