@@ -1,5 +1,5 @@
-from src.extractors.bbva import extract
-from src.translators.bbva import translate
+from src.extractors.bind import extract
+
 
 if __name__ == '__main__':
-    translate()
+    extract()
