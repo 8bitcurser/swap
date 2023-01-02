@@ -1,5 +1,3 @@
-import re
-from collections import defaultdict
 from json import dumps
 from src.helpers import read_extract
 
