@@ -14,7 +14,7 @@ def translate():
         concepts_bank = read_concept(bank)
         with open(f'translations/{bank}.csv', 'w', newline='\n') as transaltion:
             fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
-            csv = DictWriter(transaltion, fieldnames=fieldnames)
+            csv = DictWriter(transaltion, dialect='excel', fieldnames=fieldnames)
             csv.writeheader()
             for line in extract_data:
                 codigo = concepts_bank.get(line['Concepto'])
