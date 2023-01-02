@@ -18,8 +18,7 @@ def translate():
             csv.writeheader()
             watch_flag = False
             for line in extract_data:
-                code_map = concepts_bank[line['Codigo']]
-                code = code_map['code']
+                code = concepts_bank[line['Codigo']]
                 # ignore undefined ones
                 if isinstance(code, str):
                     continue
