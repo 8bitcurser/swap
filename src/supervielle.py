@@ -1,23 +1,20 @@
 from csv import DictWriter
 
-from helpers import read_concept, read_extract
-from constants import concepts
+from src.bank import Bank
+from src.constants import concepts
+from src.helpers import read_concept, read_extract
 
-"""
-nombre banco
-    fecha | codigo | concepto | debito | credito | saldo
-"""
-def translate():
-    banks = ['supervielle']
-    for bank in banks:
-        extract_data = read_extract(bank)
-        concepts_bank = read_concept(bank)
-        with open(f'translations/{bank}.csv', 'w', newline='\n') as transaltion:
+
+class Supervielle(Bank):
+    def translate(self):
+        extract_data = read_extract(self.name)
+        concepts_bank = read_concept(self.name)
+        with open(f'translations/{self.name}.csv', 'w', newline='\n') as translation:
             fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
-            csv = DictWriter(transaltion, dialect='excel', fieldnames=fieldnames)
+            csv = DictWriter(translation, dialect='excel', fieldnames=fieldnames)
             csv.writeheader()
             for line in extract_data:
-                codigo = concepts_bank.get(line['Concepto'])
+                codigo = concepts_bank.get(line[self.key])
                 if codigo is None:
                     continue
                 concepto = concepts[codigo]
@@ -32,3 +29,6 @@ def translate():
 
                     }
                 )
+
+
+supervielle = Supervielle('supervielle', 'Concepto')

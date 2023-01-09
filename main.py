@@ -1,5 +1,4 @@
-from src.extractors.bind import extract
-
+from src.bind import bind
 
 if __name__ == '__main__':
-    extract()
+    bind.translate()

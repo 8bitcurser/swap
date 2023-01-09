@@ -1,24 +1,21 @@
 from csv import DictWriter
 
-from src.helpers import read_concept, read_extract
+from src.bank import Bank
 from src.constants import concepts
+from src.helpers import read_concept, read_extract
 
-"""
-nombre banco
-    fecha | codigo | concepto | debito | credito | saldo
-"""
-def translate():
-    banks = ['bbva']
-    for bank in banks:
-        extract_data = read_extract(bank)
-        concepts_bank = read_concept(bank)
-        with open(f'translations/{bank}.csv', 'w', newline='\n') as transaltion:
+
+class BBVA(Bank):
+    def translate(self):
+        extract_data = read_extract(self.name)
+        concepts_bank = read_concept(self.name)
+        with open(f'translations/{self.name}.csv', 'w', newline='\n') as translation:
             fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
-            csv = DictWriter(transaltion, dialect='excel', fieldnames=fieldnames)
+            csv = DictWriter(translation, dialect='excel', fieldnames=fieldnames)
             csv.writeheader()
             watch_flag = False
             for line in extract_data:
-                code = concepts_bank[line['Codigo']]
+                code = concepts_bank[line[self.key]]
                 # ignore undefined ones
                 if isinstance(code, str):
                     continue
@@ -44,3 +41,5 @@ def translate():
 
                     }
                 )
+
+bbva = BBVA('bbva', 'Codigo')
