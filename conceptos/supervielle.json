@@ -1,8 +1,8 @@
 {
     "Comisión Consulta Cámara":"4",
-    "Crédito por Transferencia":"1",
+    "Crédito por Transferencia":"@",
     "Comisión Mantenimiento Cuenta":"4",
-    "Credito DEBIN":"1",
+    "Credito DEBIN":"@",
     "Comisión Riesgo Contigente":"4",
     "COMISIONES DATANET":"4",
     "IIBB- Acreditaciones Bancarias":"8",
@@ -12,12 +12,12 @@
     "IVA":"2",
     "Devolución Imp. Débitos":"7",
     "Impuesto Débitos y Créditos/CR":"6",
-    "IMPUESTO A LOS SELLOS":"1",
+    "IMPUESTO A LOS SELLOS":"10",
     "COMIS.TRANSFERENCIAS":"4",
-    "Rech. Cheques Falla Técnica":"1",
+    "Rech. Cheques Falla Técnica":"11",
     "Intereses de Sobregiro":"1",
-    "CRED BCA ELECTR INTERBANC EXEN":"1",
-    "CRED BCA ELECTRONICA INTERBANC":"1",
+    "CRED BCA ELECTR INTERBANC EXEN":"11",
+    "CRED BCA ELECTRONICA INTERBANC":"11",
     "Cobro Percepción IIBB":"8",
     "Débito Comisión Pago a Prov.":"4"
 }
