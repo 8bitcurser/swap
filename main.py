@@ -1,4 +1,4 @@
-from src.bind import bind
+from src.bbva import bbva
 
 if __name__ == '__main__':
-    bind.translate()
+    bbva.translate()

@@ -15,26 +15,28 @@ class BBVA(Bank):
             csv.writeheader()
             watch_flag = False
             for line in extract_data:
-                code = concepts_bank[line[self.key]]
+                internal_code = line[self.key]
+                external_code = concepts_bank[internal_code]['code']
                 # ignore undefined ones
-                if isinstance(code, str):
+                if isinstance(external_code, str):
                     continue
-                # bbva triad activates
-                if code == '898':
-                    watch_flag = True
                 # deactivate flag when triad or duo is over
-                if watch_flag and isinstance(code, int):
+                if watch_flag and isinstance(external_code, int):
                     watch_flag = False
+                # bbva triad activates
+                if internal_code == '898':
+                    watch_flag = True
+
                 # if triad activated use correct code if not default to normal
-                if isinstance(code, list) and watch_flag:
-                    code = code[1]
-                elif isinstance(code, list) and not watch_flag:
-                    code = code[0]
+                if isinstance(external_code, list) and watch_flag:
+                    external_code = external_code[1]
+                elif isinstance(external_code, list) and not watch_flag:
+                    external_code = external_code[0]
                 csv.writerow(
                     {
                         'fecha': line['Fecha'],
-                        'codigo': code,
-                        'concepto': concepts[str(code)],
+                        'codigo': external_code,
+                        'concepto': concepts[str(external_code)],
                         'debito': line['Débito'],
                         'credito': line['Crédito'],
                         'saldo': line['Saldo']

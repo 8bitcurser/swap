@@ -23,8 +23,8 @@ class BIND(Bank):
                         'fecha': line['Fecha Operación'],
                         'codigo': codigo,
                         'concepto': concepto,
-                        'debito': line['Importe'],
-                        'credito': '-',
+                        'debito': line['Importe'] if line['Importe'] < 0 else '-',
+                        'credito': line['Importe'] if line['Importe'] > 0 else '-',
                         'saldo': line['Saldo']
 
                     }

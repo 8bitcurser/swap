@@ -15,7 +15,7 @@ class Supervielle(Bank):
             csv.writeheader()
             for line in extract_data:
                 codigo = concepts_bank.get(line[self.key])
-                if codigo is None:
+                if codigo is None or concepts.get(codigo) is None:
                     continue
                 concepto = concepts[codigo]
                 csv.writerow(
