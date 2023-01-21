@@ -1,4 +1,4 @@
-from src.bbva import bbva
+from src.supervielle import supervielle
 
 if __name__ == '__main__':
-    bbva.translate()
+    supervielle.recategorization()

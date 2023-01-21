@@ -6,23 +6,21 @@ from src.helpers import read_concept, read_extract
 
 
 class Supervielle(Bank):
-    def translate(self):
+    def recategorization(self):
         extract_data = read_extract(self.name)
         concepts_bank = read_concept(self.name)
-        with open(f'translations/{self.name}.csv', 'w', newline='\n') as translation:
-            fieldnames=['fecha', 'codigo', 'concepto', 'debito', 'credito', 'saldo']
-            csv = DictWriter(translation, dialect='excel', fieldnames=fieldnames)
+        with open(f'recategorization/{self.name}.csv', 'w', newline='\n') as transform:
+            fieldnames=['fecha', f'concepto_{self.name}', 'concepto_astor', 'codigo', 'debito', 'credito', 'saldo']
+            csv = DictWriter(transform, dialect='excel', fieldnames=fieldnames)
             csv.writeheader()
             for line in extract_data:
-                codigo = concepts_bank.get(line[self.key])
-                if codigo is None or concepts.get(codigo) is None:
-                    continue
-                concepto = concepts[codigo]
+                inner_concept = line['Concepto']
                 csv.writerow(
                     {
                         'fecha': line['Fecha'],
-                        'codigo': codigo,
-                        'concepto': concepto,
+                        f'concepto_{self.name}': inner_concept,
+                        'concepto_astor': concepts_bank[inner_concept]['ASTOR'],
+                        'codigo': concepts_bank[inner_concept]['ID'],
                         'debito': line['Débito'],
                         'credito': line['Crédito'],
                         'saldo': line['Saldo']

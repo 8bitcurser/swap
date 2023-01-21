@@ -9,6 +9,14 @@ def read_extract(extract_name):
         return data
 
 def read_concept(bank_name):
-    with open(f'conceptos/{bank_name}.json') as sup:
-        file = sup.read()
-        return loads(file)
+    with open(f'conceptos/{bank_name}.csv', newline='\n') as sup:
+        file = sup.readlines()
+        data = DictReader(file, delimiter=',')
+        data = [*data]
+        cleaned = {}
+        for record in data:
+            cleaned[record['CONCEPTOS']] = {
+                'ID': record['ID'],
+                'ASTOR': record['CONCEPTO ASTOR']
+            }
+        return cleaned
