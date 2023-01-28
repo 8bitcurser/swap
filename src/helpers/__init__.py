@@ -23,6 +23,13 @@ def read_concept(bank_name):
             }
         return cleaned
 
+def read_recat(file_name):
+    with open(f'recategorization/{file_name}', newline='\n') as recat:
+        file = recat.readlines()
+        data = DictReader(file, delimiter=',')
+        data = [*data]
+    return data
+
 def convert_csv_to_xls(file_path, destination='recategorization'):
     file = read_csv(file_path)
     file_name = file_path.split('/')[-1].split('.')[0]
