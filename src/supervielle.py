@@ -2,14 +2,15 @@ from csv import DictWriter
 
 from src.bank import Bank
 from src.constants import concepts
-from src.helpers import read_concept, read_extract
+from src.helpers import read_concept, read_extract, convert_csv_to_xls
 
 
 class Supervielle(Bank):
     def recategorization(self):
         extract_data = read_extract(self.name)
         concepts_bank = read_concept(self.name)
-        with open(f'recategorization/{self.name}.csv', 'w', newline='\n') as transform:
+        file_path = f'recategorization/{self.name}.csv'
+        with open(file_path, 'w', newline='\n') as transform:
             fieldnames=['fecha', f'concepto_{self.name}', 'concepto_astor', 'codigo', 'debito', 'credito', 'saldo']
             csv = DictWriter(transform, dialect='excel', fieldnames=fieldnames)
             csv.writeheader()
@@ -27,6 +28,7 @@ class Supervielle(Bank):
 
                     }
                 )
+        convert_csv_to_xls(file_path)
 
 
 supervielle = Supervielle('supervielle', 'Concepto')
