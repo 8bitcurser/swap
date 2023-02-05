@@ -1,7 +1,6 @@
 from csv import DictWriter
 
 from src.bank import Bank
-from src.constants import concepts
 from src.helpers import read_concept, read_extract, convert_csv_to_xls
 
 
