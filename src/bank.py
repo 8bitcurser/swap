@@ -1,4 +1,4 @@
-from src.helpers import read_recat
+from src.helpers import read_recat, convert_csv_to_xls
 
 class Bank:
     def __init__(self, name, key):
@@ -23,7 +23,10 @@ class Bank:
                 cat_sum[concepto] += monto
             else:
                 cat_sum[concepto] = monto
-        with open(f'post_process/{self.name}.csv', 'w') as post:
-            post.write("'concepto','monto'\n")
+        file_name = f'post_process/{self.name}.csv'
+        with open(file_name, 'w') as post:
+            post.write("concepto,monto\n")
             for cat in cat_sum:
                 post.write(f"{cat},{cat_sum[cat]}\n")
+        
+        convert_csv_to_xls(file_name, destination='post_process')
