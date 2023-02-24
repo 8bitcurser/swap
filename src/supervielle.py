@@ -1,5 +1,5 @@
 from csv import DictWriter
-from re import match
+from re import search
 
 from src.bank import Bank
 from src.helpers import read_concept, read_extract, convert_csv_to_xls
@@ -8,11 +8,10 @@ from src.helpers import read_concept, read_extract, convert_csv_to_xls
 class Supervielle(Bank):
     def _objective_parser(self, line, id):
         if id == "12":
-            cuit = match(r"/(?<![\s:-])*\b(\d{11})\b(?!\s)*", line['Detalle'])
+            cuit = search(r"\b(\d{11})\b", line['Detalle'])
             objective = cuit.group() if cuit is not None else ""
         else:
             check_num = line['Detalle'].replace("Número De Cheque: ", '')
-            print(line['Concepto'])
             if 'Falla Técnica' in line['Concepto']:
                 objective = f"{check_num} // Falla Técnica"
             else:
@@ -44,6 +43,3 @@ class Supervielle(Bank):
                     }
                 )
         convert_csv_to_xls(file_path)
-
-
-supervielle = Supervielle('supervielle', 'Concepto')
