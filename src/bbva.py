@@ -6,6 +6,7 @@ from src.helpers import read_concept, read_extract
 
 
 class BBVA(Bank):
+    # TODO: Redo current schema is no longer active
     def translate(self):
         extract_data = read_extract(self.name)
         concepts_bank = read_concept(self.name)
