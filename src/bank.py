@@ -1,6 +1,7 @@
+from json import dumps
 from dataclasses import dataclass, field
 from src.constants import concepts
-from src.helpers import read_concept, read_extract, read_recat, convert_csv_to_xls
+from src.helpers import read_extract, convert_csv_to_xls
 
 
 @dataclass
@@ -33,7 +34,7 @@ class Bank:
             self.enriched_extract_data.append(
                 {
                     'fecha': line['Fecha'],
-                    f'concepto_{self.name}': bank_concept,
+                    'concepto': bank_concept,
                     'concepto_astor': concepts[id],
                     'codigo': id,
                     'debito': line['Débito'],
@@ -53,29 +54,47 @@ class Bank:
             else:
                 self.total_by_category[concepto] = monto
     
+    def get_thirdparty_transfers(self):
+        data = self.enriched_extract_data
+        transfers = [
+            line for line in data if line['codigo'] == 12 and \
+                line['objetivo'] and \
+                line['objetivo'] != self.cuil and \
+                line['debito']]
+        transfers_by_concept = {}
+        for transfer in transfers:
+            concept = transfer['concepto']
+            if transfers_by_concept.get(concept) is not None:
+                transfers_by_concept[concept]['raw'].append(transfer)
+            else:
+                transfers_by_concept[concept] = {}
+                transfers_by_concept[concept]['raw'] = [transfer]
+        
+        for concept in transfers_by_concept:
+            transfers_by_cuil = {}
+            for transfer in transfers_by_concept[concept]['raw']:
+                thirdparty_cuil = transfer['objetivo']
+                monto = self._amount_parser(transfer['debito'])
+                if transfers_by_cuil.get(thirdparty_cuil) is not None:
+                    transfers_by_cuil[thirdparty_cuil] += monto
+                else:
+                    transfers_by_cuil[thirdparty_cuil] = monto
+            transfers_by_concept[concept]['clean'] = transfers_by_cuil
+        file_name = f'transfers/{self.name}.json'
+        with open(file_name, 'w') as post:
+            post.write(dumps(transfers_by_concept, indent=4, sort_keys=True, ensure_ascii=False))
+
+        
+        # file_name = f'transfers/{self.name}.csv'
+        # with open(file_name, 'w') as post:
+        #     post.write("cuil,monto,concepto\n")
+        #     for transfer in transfers_by_cuil:
+        #         post.write(f"{transfer},{'{:.2f}'.format(transfers_by_cuil[transfer])}\n")
+        
+        # convert_csv_to_xls(file_name, destination='transfers')
+
     def load(self):
         self.extract_data = read_extract(f'{self.name}')
         self._enrich()
         self._sum_by_bank_category()
-    
-    def get_thirdparty_transfers(self):
-        data = self.enriched_extract_data
-        transfers = [
-            line for line in data if line['codigo'] == 12 and line['objetivo'] != self.cuil and line['debito']]
-        transfers_by_cuil = {
-        }
-        for transfer in transfers:
-            thirdparty_cuil = transfer['objetivo']
-            monto = self._amount_parser(transfer['debito'])
-            if transfers_by_cuil.get(thirdparty_cuil) is not None:
-                transfers_by_cuil[thirdparty_cuil] += monto
-            else:
-                transfers_by_cuil[thirdparty_cuil] = monto
-
-        file_name = f'transfers/{self.name}.csv'
-        with open(file_name, 'w') as post:
-            post.write("cuil,monto\n")
-            for transfer in transfers_by_cuil:
-                post.write(f"{transfer},{'{:.2f}'.format(transfers_by_cuil[transfer])}\n")
-        
-        convert_csv_to_xls(file_name, destination='transfers')
+        self.get_thirdparty_transfers()

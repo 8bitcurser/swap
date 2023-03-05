@@ -1,4 +1,3 @@
-from json import dumps
 from fastapi import FastAPI
 
 from src.supervielle import Supervielle
@@ -23,7 +22,6 @@ def process(bank_name: str, client_cuil: int):
         bank.load()
         return {
             "Status": f"{bank_name} processed",
-            "Client": f"{client_cuil}",
-            "enrich": dumps(bank.enriched_extract_data, indent=4, sort_keys=True)
+            "Client": f"{client_cuil}"
         }
     return {"Status": f"{bank_name} not supported"}
