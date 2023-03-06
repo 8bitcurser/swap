@@ -58,9 +58,8 @@ class Bank:
         data = self.enriched_extract_data
         transfers = [
             line for line in data if line['codigo'] == 12 and \
-                line['objetivo'] and \
-                line['objetivo'] != self.cuil and \
-                line['debito']]
+                line['objetivo'] != self.cuil
+            ]
         transfers_by_concept = {}
         for transfer in transfers:
             concept = transfer['concepto']
@@ -74,7 +73,8 @@ class Bank:
             transfers_by_cuil = {}
             for transfer in transfers_by_concept[concept]['raw']:
                 thirdparty_cuil = transfer['objetivo']
-                monto = self._amount_parser(transfer['debito'])
+                monto = transfer['debito'] if transfer['debito'] else transfer['credito']
+                monto = self._amount_parser(monto)
                 if transfers_by_cuil.get(thirdparty_cuil) is not None:
                     transfers_by_cuil[thirdparty_cuil] += monto
                 else:

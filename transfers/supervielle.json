@@ -1,4 +1,726 @@
 {
+    "CRED BCA ELECTR INTERBANC EXEN": {
+        "clean": {
+            "33708528809": 204917000.0
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "5.550.000,00",
+                "debito": "",
+                "fecha": "31/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "3.695.740,46"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "29.100.000,00",
+                "debito": "",
+                "fecha": "31/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "2.345.740,46"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "15.000.000,00",
+                "debito": "",
+                "fecha": "30/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-14.774.194,61"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.300.000,00",
+                "debito": "",
+                "fecha": "26/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-14.139.811,97"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.090.000,00",
+                "debito": "",
+                "fecha": "26/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-27.409.944,60"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.900.000,00",
+                "debito": "",
+                "fecha": "25/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-19.401.962,19"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.970.000,00",
+                "debito": "",
+                "fecha": "25/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-22.718.962,19"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.090.000,00",
+                "debito": "",
+                "fecha": "25/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-24.688.962,19"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "6.000.000,00",
+                "debito": "",
+                "fecha": "24/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-13.518.388,96"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.600.000,00",
+                "debito": "",
+                "fecha": "24/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-19.518.388,96"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "38.500.000,00",
+                "debito": "",
+                "fecha": "22/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "14.454.197,02"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "14.400.000,00",
+                "debito": "",
+                "fecha": "16/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "12.730.166,22"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "13.700.000,00",
+                "debito": "",
+                "fecha": "16/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "7.233.542,83"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.000.000,00",
+                "debito": "",
+                "fecha": "16/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-6.466.457,17"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "50.000.000,00",
+                "debito": "",
+                "fecha": "12/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "46.687.259,56"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "510.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-22.704.784,35"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.100.000,00",
+                "debito": "",
+                "fecha": "05/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-9.155.953,25"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "14.800.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "8.980.476,68"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "307.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-10.012.280,32"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.100.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-5.158.538,36"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTR INTERBANC EXEN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.900.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-7.258.538,36"
+            }
+        ]
+    },
+    "CRED BCA ELECTRONICA INTERBANC": {
+        "clean": {
+            "30706034532": 29873752.91,
+            "30708050675": 61590377.89,
+            "30716575477": 12465043.68
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "4.734.452,48",
+                "debito": "",
+                "fecha": "31/08/2022",
+                "objetivo": "30708050675",
+                "saldo": "-26.754.259,54"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.618.152,92",
+                "debito": "",
+                "fecha": "30/08/2022",
+                "objetivo": "30708050675",
+                "saldo": "-29.774.194,61"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "5.785.114,65",
+                "debito": "",
+                "fecha": "26/08/2022",
+                "objetivo": "30716575477",
+                "saldo": "-15.439.811,97"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "6.788.898,71",
+                "debito": "",
+                "fecha": "25/08/2022",
+                "objetivo": "30708050675",
+                "saldo": "-25.778.962,19"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "6.679.929,03",
+                "debito": "",
+                "fecha": "19/08/2022",
+                "objetivo": "30716575477",
+                "saldo": "-3.680.363,38"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "7.731.772,52",
+                "debito": "",
+                "fecha": "18/08/2022",
+                "objetivo": "30708050675",
+                "saldo": "-20.740.994,56"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "40.717.101,26",
+                "debito": "",
+                "fecha": "11/08/2022",
+                "objetivo": "30708050675",
+                "saldo": "20.768.475,29"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "130.384,34",
+                "debito": "",
+                "fecha": "05/08/2022",
+                "objetivo": "30706034532",
+                "saldo": "-14.630.015,83"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "16.836.531,61",
+                "debito": "",
+                "fecha": "04/08/2022",
+                "objetivo": "30706034532",
+                "saldo": "100.082,62"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "11.906.836,96",
+                "debito": "",
+                "fecha": "02/08/2022",
+                "objetivo": "30706034532",
+                "saldo": "-10.212.996,91"
+            },
+            {
+                "codigo": 12,
+                "concepto": "CRED BCA ELECTRONICA INTERBANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.000.000,00",
+                "debito": "",
+                "fecha": "02/08/2022",
+                "objetivo": "30706034532",
+                "saldo": "-21.832.783,84"
+            }
+        ]
+    },
+    "Credito DEBIN": {
+        "clean": {
+            "33708528809": 7547000.0
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.417.000,00",
+                "debito": "",
+                "fecha": "25/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-21.301.962,19"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.024.000,00",
+                "debito": "",
+                "fecha": "17/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-19.592.511,64"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "600.000,00",
+                "debito": "",
+                "fecha": "16/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-9.340.666,41"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.124.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-26.452.965,08"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "285.000,00",
+                "debito": "",
+                "fecha": "05/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-11.756.204,54"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.100.000,00",
+                "debito": "",
+                "fecha": "04/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "9.171.139,06"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Credito DEBIN",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.997.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-5.819.523,32"
+            }
+        ]
+    },
+    "Crédito Transf. HomeBanking": {
+        "clean": {
+            "30704459099": 5350000.0,
+            "30708570962": 9250000.0
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "Crédito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.500.000,00",
+                "debito": "",
+                "fecha": "30/08/2022",
+                "objetivo": "30708570962",
+                "saldo": "-10.285.091,41"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "3.100.000,00",
+                "debito": "",
+                "fecha": "30/08/2022",
+                "objetivo": "30704459099",
+                "saldo": "-11.748.929,41"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.100.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "30704459099",
+                "saldo": "-7.816.523,32"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.150.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "30704459099",
+                "saldo": "-8.890.004,52"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "750.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "30708570962",
+                "saldo": "-10.319.280,32"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "7.000.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "30708570962",
+                "saldo": "1.672.705,64"
+            }
+        ]
+    },
+    "Crédito por Transferencia": {
+        "clean": {
+            "20129657902": 3100000.0,
+            "30645852865": 15711258.11,
+            "30704459099": 4510000.0,
+            "30716972581": 269774.34,
+            "33708528809": 65965000.0
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "9.283.158,11",
+                "debito": "",
+                "fecha": "29/08/2022",
+                "objetivo": "30645852865",
+                "saldo": "-14.768.586,10"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "3.100.000,00",
+                "debito": "",
+                "fecha": "26/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-21.085.459,08"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "6.428.100,00",
+                "debito": "",
+                "fecha": "23/08/2022",
+                "objetivo": "30645852865",
+                "saldo": "-20.890.714,27"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "7.000.000,00",
+                "debito": "",
+                "fecha": "17/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-20.616.511,64"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "7.500.000,00",
+                "debito": "",
+                "fecha": "16/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "19.697.347,80"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "10.000.000,00",
+                "debito": "",
+                "fecha": "12/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-3.156.810,44"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.100.000,00",
+                "debito": "",
+                "fecha": "10/08/2022",
+                "objetivo": "20129657902",
+                "saldo": "-19.905.210,51"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.600.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-10.761.463,29"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "3.145.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-10.211.186,87"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.000.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "20129657902",
+                "saldo": "-13.356.186,87"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "3.900.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "30704459099",
+                "saldo": "-15.307.970,87"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.690.000,00",
+                "debito": "",
+                "fecha": "09/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-19.113.949,67"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "350.000,00",
+                "debito": "",
+                "fecha": "08/08/2022",
+                "objetivo": "30704459099",
+                "saldo": "-12.206.460,25"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.030.000,00",
+                "debito": "",
+                "fecha": "08/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-12.548.022,45"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.500.000,00",
+                "debito": "",
+                "fecha": "08/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-11.941.444,75"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "100.000,00",
+                "debito": "",
+                "fecha": "04/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-9.266.666,36"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "17.000.000,00",
+                "debito": "",
+                "fecha": "04/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "8.071.139,06"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "1.000.000,00",
+                "debito": "",
+                "fecha": "03/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-9.800.236,24"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "5.700.000,00",
+                "debito": "",
+                "fecha": "03/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "-10.800.122,26"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "269.774,34",
+                "debito": "",
+                "fecha": "03/08/2022",
+                "objetivo": "30716972581",
+                "saldo": "-16.500.122,26"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "260.000,00",
+                "debito": "",
+                "fecha": "02/08/2022",
+                "objetivo": "30704459099",
+                "saldo": "-9.959.264,99"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "600.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "9.580.476,68"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Crédito por Transferencia",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "2.000.000,00",
+                "debito": "",
+                "fecha": "01/08/2022",
+                "objetivo": "33708528809",
+                "saldo": "3.672.705,64"
+            }
+        ]
+    },
     "DEB BCA ELECTR INTERBANC EXEN": {
         "clean": {
             "33708528809": 1000000.0
@@ -33,6 +755,130 @@
             }
         ]
     },
+    "DEB BCA ELECTRONICA INTRABANC": {
+        "clean": {
+            "": 4566105.17
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "DEB BCA ELECTRONICA INTRABANC",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "4.566.105,17",
+                "fecha": "08/08/2022",
+                "objetivo": "",
+                "saldo": "-14.578.022,45"
+            }
+        ]
+    },
+    "Debito Transf. HomeBanking": {
+        "clean": {
+            "": 20750000.0
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "3.300.000,00",
+                "fecha": "31/08/2022",
+                "objetivo": "",
+                "saldo": "375.940,46"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "30.000,00",
+                "fecha": "24/08/2022",
+                "objetivo": "",
+                "saldo": "-17.808.689,89"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "1.900.000,00",
+                "fecha": "22/08/2022",
+                "objetivo": "",
+                "saldo": "-1.957.202,98"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "470.000,00",
+                "fecha": "19/08/2022",
+                "objetivo": "",
+                "saldo": "-8.781.145,80"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "830.000,00",
+                "fecha": "19/08/2022",
+                "objetivo": "",
+                "saldo": "-8.308.325,80"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "1.700.000,00",
+                "fecha": "18/08/2022",
+                "objetivo": "",
+                "saldo": "-18.812.855,78"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "225.000,00",
+                "fecha": "12/08/2022",
+                "objetivo": "",
+                "saldo": "46.460.909,56"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "5.100.000,00",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "-6.731.051,53"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "145.000,00",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "-383.191,53"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Debito Transf. HomeBanking",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "7.050.000,00",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "-237.321,53"
+            }
+        ]
+    },
     "Débito Automático de Servicio": {
         "clean": {
             "20129657902": 1414130.8900000001
@@ -57,6 +903,103 @@
                 "fecha": "16/08/2022",
                 "objetivo": "20129657902",
                 "saldo": "-9.919.135,74"
+            }
+        ]
+    },
+    "Pago de Servicios": {
+        "clean": {
+            "": 14489512.88
+        },
+        "raw": [
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "1.177.429,90",
+                "fecha": "24/08/2022",
+                "objetivo": "",
+                "saldo": "-17.628.509,89"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "1.500,00",
+                "fecha": "23/08/2022",
+                "objetivo": "",
+                "saldo": "-2.249.727,19"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "407.217,00",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "8.158.878,47"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "3.338.114,70",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "8.566.095,47"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "3.115.811,90",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "11.904.210,17"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "3.739.204,22",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "15.020.022,07"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "652.147,40",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "18.759.226,29"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "1.357.101,60",
+                "fecha": "11/08/2022",
+                "objetivo": "",
+                "saldo": "19.411.373,69"
+            },
+            {
+                "codigo": 12,
+                "concepto": "Pago de Servicios",
+                "concepto_astor": "TRANSFERENCIAS",
+                "credito": "",
+                "debito": "700.986,16",
+                "fecha": "04/08/2022",
+                "objetivo": "",
+                "saldo": "-9.967.652,52"
             }
         ]
     },
