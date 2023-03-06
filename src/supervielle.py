@@ -7,46 +7,160 @@ Supervielle = Bank(
     name='supervielle',
     key='Concepto',
     concepts_map = {
-        'Acreditación Cheque Dep.48 Hs.': 1,
-        'COMIS.TRANSFERENCIAS': 2,
-        'COMISIONES DATANET': 2,
-        'CRED BCA ELECTR INTERBANC EXEN':12,
-        'CRED BCA ELECTRONICA INTERBANC':12,
-        'Cobro Percepción IIBB': 3,
-        'Comisión Consulta Cámara': 2,
-        'Comisión Mantenimiento Cuenta': 2,
-        'Comisión Riesgo Contigente': 2,
-        'Contras.Ints.Sobreg.': 6,
-        'Credito DEBIN':12,
-        'Crédito Transf. HomeBanking':12,
-        'Crédito por Transferencia':12,
-        'DEB BCA ELECTR INTERBANC EXEN':12,
-        'DEB BCA ELECTRONICA INTERBANC':12,
-        'DEB BCA ELECTRONICA INTRABANC':12,
-        'Deb. Pago de Sueldo':11,
-        'Debito Transf. HomeBanking':12,
-        'Descto. Docum.- Acreditación': 8,
-        'Devolución Imp. Débitos': 5,
+        'Acreditación Cheque Dep.48 Hs.': {
+            'id': 1, 'taxes': {
+                'imp_creditos': 0.06,
+                'iibb_acred_banc': 0.018,
+            }
+        },
+        'COMIS.TRANSFERENCIAS': {
+            'id': 2, 'taxes': {
+                'iva_21': 0.21,
+                'percep_iibb':0.01,
+            }
+        },
+        'COMISIONES DATANET': {
+            'id': 2, 'taxes': {
+                'iva_21': 0.21,
+            }
+        },
+        'CRED BCA ELECTR INTERBANC EXEN': {
+            'id': 12, 'taxes': {}
+        },
+        'CRED BCA ELECTRONICA INTERBANC': {
+            'id': 12, 'taxes': {
+                'imp_creditos': 0.06,
+                'iibb_acred_banc': 0.018,
+            }
+        },
+        'Cobro Percepción IIBB': {
+            'id': 3, 'taxes': {}
+        },
+        'Comisión Consulta Cámara': {
+            'id': 2, 'taxes': {
+                'iva_21': 0.21,
+            }
+        },
+        'Comisión Mantenimiento Cuenta': {
+            'id': 2, 'taxes': {
+                'iva_21': 0.21,
+                'percep_iva_3': 0.03,
+                'percep_iibb':0.01,
+            }
+        },
+        'Comisión Riesgo Contigente': {
+            'id': 2, 'taxes': {
+                'iva_21': 0.21,
+            }
+        },
+        'Contras.Ints.Sobreg.': {
+            'id': 6, 'taxes': {
+                'iva_10.5': 0.105,
+            }
+        },
+        'Credito DEBIN': {
+            'id': 12, 'taxes': {}
+        },
+        'Crédito Transf. HomeBanking': {
+            'id': 12, 'taxes': {
+                'imp_creditos': 0.06,
+                'iibb_acred_banc': 0.018,
+            }
+        },
+        'Crédito por Transferencia': {
+            'id': 12, 'taxes': {
+                'imp_creditos': 0.06,
+                'iibb_acred_banc': 0.018,
+            }
+        },
+        'DEB BCA ELECTR INTERBANC EXEN': {
+            'id': 12, 'taxes': {}
+        },
+        'DEB BCA ELECTRONICA INTERBANC': {
+            'id': 12, 'taxes': {}
+        },
+        'DEB BCA ELECTRONICA INTRABANC': {
+            'id': 12, 'taxes': {}
+        },
+        'Deb. Pago de Sueldo': {
+            'id': 11, 'taxes': {}
+        },
+        'Debito Transf. HomeBanking': {
+            'id': 12, 'taxes': {}
+        },
+        'Descto. Docum.- Acreditación': {
+            'id': 8, 'taxes': {
+                'iibb_acred_banc': 0.018,
+            }
+        },
+        'Devolución Imp. Débitos': {
+            'id': 5, 'taxes': {}
+        },
         'Débito Automático de Servicio':12,
-        'Débito Comisión Pago a Prov.': 2,
-        'IIBB- Acreditaciones Bancarias': 3,
-        'IMPUESTO A LOS SELLOS':10,
-        'IVA': 7,
-        'Impuesto Débitos y Créditos/CR': 4,
-        'Impuesto Débitos y Créditos/DB': 5,
-        'Intereses de Sobregiro': 6,
-        'Pago Automático de Préstamo': 8,
-        'Pago Cheque de Cámara Recibida': 1,
-        'Pago Cámara SPV 24 hs.': 1,
-        'Pago de Servicios':12,
-        'Percepción I.V.A. RG. 3337': 9,
-        'Préstamos Inversion Productiva': 8,
-        'Rech. Cheques Falla Técnica': 1,
-        'SIPAP - Pago Cheque de Cámara': 1,
-        'SIPAP - Pago Cámara SPV 24 hs.': 1,
-        'Transferencia por CBU': 12,
-        'Trf. Masivas Pago Proveedores':12,
-        'Trf. Pago.Prov-Terceros O/Bcos': 1
+        'Débito Comisión Pago a Prov.': {
+            'id': 2, 'taxes': {}
+        },
+        'IIBB- Acreditaciones Bancarias': {
+            'id': 3, 'taxes': {}
+        },
+        'IMPUESTO A LOS SELLOS': {
+            'id': 10, 'taxes': {}
+        },
+        'IVA': {
+            'id': 7, 'taxes': {}
+        },
+        'Impuesto Débitos y Créditos/CR': {
+            'id': 4, 'taxes': {}
+        },
+        'Impuesto Débitos y Créditos/DB': {
+            'id': 5, 'taxes': {}
+        },
+        'Intereses de Sobregiro': {
+            'id': 6, 'taxes': {
+                'iva_10.5': 0.105,
+                'percep_iva_1.5': 0.015,
+                'percep_iibb':0.01,
+            }
+        },
+        'Pago Automático de Préstamo': {
+            'id': 8, 'taxes': {}
+        },
+        'Pago Cheque de Cámara Recibida': {
+            'id': 1, 'taxes': {}
+        },
+        'Pago Cámara SPV 24 hs.': {
+            'id': 1, 'taxes': {}
+        },
+        'Pago de Servicios': {
+            'id': 12, 'taxes': {}
+        },
+        'Percepción I.V.A. RG. 3337': {
+            'id': 9, 'taxes': {}
+        },
+        'Préstamos Inversion Productiva': {
+            'id': 8, 'taxes': {}
+        },
+        'Rech. Cheques Falla Técnica': {
+            'id': 1, 'taxes': {}
+        },
+        'SIPAP - Pago Cheque de Cámara': {
+            'id': 1, 'taxes': {}
+        },
+        'SIPAP - Pago Cámara SPV 24 hs.': {
+            'id': 1, 'taxes': {}
+        },
+        'Transferencia por CBU': {
+            'id': 12, 'taxes': {}
+        },
+        'Trf. Masivas Pago Proveedores': {
+            'id': 12, 'taxes': {}
+        },
+        'Trf. Pago.Prov-Terceros O/Bcos': {
+            'id': 1, 'taxes': {
+                'imp_creditos': 0.06,
+                'iibb_acred_banc': 0.018,
+            }
+        },
     }
 )
 def _objective_parser(line, id):

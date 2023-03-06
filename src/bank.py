@@ -29,7 +29,7 @@ class Bank:
         """
         for line in self.extract_data:
             bank_concept = line['Concepto']
-            id = self.concepts_map[bank_concept]
+            id = self.concepts_map[bank_concept]['id']
             objective = self._objective_parser(line, id) if id in [1, 12] else ""
             self.enriched_extract_data.append(
                 {
@@ -54,6 +54,10 @@ class Bank:
             else:
                 self.total_by_category[concepto] = monto
     
+    def _get_tax(self, amount, modifier):
+        return amount * modifier
+
+
     def get_thirdparty_transfers(self):
         data = self.enriched_extract_data
         transfers = [
