@@ -46,7 +46,7 @@ class Bank:
     
     def _sum_by_bank_category(self):
         for record in self.enriched_extract_data:
-            concepto = record['concepto_astor']
+            concepto = record['concepto']
             monto = record['credito'] if not record['debito'] else record['debito']
             monto = self._amount_parser(monto)
             if self.total_by_category.get(concepto) is not None:
@@ -57,6 +57,19 @@ class Bank:
     def _get_tax(self, amount, modifier):
         return amount * modifier
 
+    def _apply_taxes(self):
+        for category in self.total_by_category:
+            taxes = {
+                tax: self._get_tax(
+                    self.total_by_category[category],
+                    self.concepts_map[category]['taxes'][tax]
+                ) for tax in self.concepts_map[category]['taxes']
+            }
+            self.total_by_category[category] = {
+                'raw_amount': self.total_by_category[category],
+                'taxes': taxes
+                
+            }
 
     def get_thirdparty_transfers(self):
         data = self.enriched_extract_data
@@ -86,19 +99,21 @@ class Bank:
             transfers_by_concept[concept]['clean'] = transfers_by_cuil
         file_name = f'transfers/{self.name}.json'
         with open(file_name, 'w') as post:
-            post.write(dumps(transfers_by_concept, indent=4, sort_keys=True, ensure_ascii=False))
+            post.write(
+                dumps(transfers_by_concept, indent=4, sort_keys=True, ensure_ascii=False)
+            )
 
-        
-        # file_name = f'transfers/{self.name}.csv'
-        # with open(file_name, 'w') as post:
-        #     post.write("cuil,monto,concepto\n")
-        #     for transfer in transfers_by_cuil:
-        #         post.write(f"{transfer},{'{:.2f}'.format(transfers_by_cuil[transfer])}\n")
-        
-        # convert_csv_to_xls(file_name, destination='transfers')
+    def dump_concepts_sum_with_taxes(self):
+        file_name = f'taxes/{self.name}.json'
+        with open(file_name, 'w') as post:
+            post.write(
+                dumps(self.total_by_category, indent=4, sort_keys=True, ensure_ascii=False)
+            )
 
     def load(self):
         self.extract_data = read_extract(f'{self.name}')
         self._enrich()
         self._sum_by_bank_category()
+        self._apply_taxes()
         self.get_thirdparty_transfers()
+        self.dump_concepts_sum_with_taxes()

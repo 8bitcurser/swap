@@ -1,0 +1,198 @@
+{
+    "Acreditación Cheque Dep.48 Hs.": {
+        "raw_amount": 86020.5,
+        "taxes": {
+            "iibb_acred_banc": 1548.369,
+            "imp_creditos": 516.123
+        }
+    },
+    "COMIS.TRANSFERENCIAS": {
+        "raw_amount": 2530.0,
+        "taxes": {
+            "iva_21": 531.3,
+            "percep_iibb": 2.5300000000000002
+        }
+    },
+    "COMISIONES DATANET": {
+        "raw_amount": 94.2,
+        "taxes": {
+            "iva_21": 19.782
+        }
+    },
+    "CRED BCA ELECTR INTERBANC EXEN": {
+        "raw_amount": 204917000.0,
+        "taxes": {}
+    },
+    "CRED BCA ELECTRONICA INTERBANC": {
+        "raw_amount": 103929174.47999999,
+        "taxes": {
+            "iibb_acred_banc": 1870725.1406399996,
+            "imp_creditos": 623575.0468799999
+        }
+    },
+    "Cobro Percepción IIBB": {
+        "raw_amount": 536.72,
+        "taxes": {}
+    },
+    "Comisión Consulta Cámara": {
+        "raw_amount": 700.0,
+        "taxes": {
+            "iva_21": 147.0
+        }
+    },
+    "Comisión Mantenimiento Cuenta": {
+        "raw_amount": 4706.0,
+        "taxes": {
+            "iva_21": 988.26,
+            "percep_iibb": 4.706,
+            "percep_iva_3": 141.18
+        }
+    },
+    "Comisión Riesgo Contigente": {
+        "raw_amount": 516.0,
+        "taxes": {
+            "iva_21": 108.36
+        }
+    },
+    "Contras.Ints.Sobreg.": {
+        "raw_amount": 2349.59,
+        "taxes": {
+            "iva_10.5": 246.70695
+        }
+    },
+    "Credito DEBIN": {
+        "raw_amount": 7547000.0,
+        "taxes": {}
+    },
+    "Crédito Transf. HomeBanking": {
+        "raw_amount": 14600000.0,
+        "taxes": {
+            "iibb_acred_banc": 262800.0,
+            "imp_creditos": 87600.0
+        }
+    },
+    "Crédito por Transferencia": {
+        "raw_amount": 89556032.45,
+        "taxes": {
+            "iibb_acred_banc": 1612008.5840999999,
+            "imp_creditos": 537336.1947
+        }
+    },
+    "DEB BCA ELECTR INTERBANC EXEN": {
+        "raw_amount": 1000000.0,
+        "taxes": {}
+    },
+    "DEB BCA ELECTRONICA INTERBANC": {
+        "raw_amount": 666200.8,
+        "taxes": {}
+    },
+    "DEB BCA ELECTRONICA INTRABANC": {
+        "raw_amount": 4566105.17,
+        "taxes": {}
+    },
+    "Deb. Pago de Sueldo": {
+        "raw_amount": 8975093.0,
+        "taxes": {}
+    },
+    "Debito Transf. HomeBanking": {
+        "raw_amount": 20750000.0,
+        "taxes": {}
+    },
+    "Descto. Docum.- Acreditación": {
+        "raw_amount": 76168604.92000002,
+        "taxes": {
+            "iibb_acred_banc": 1371034.88856
+        }
+    },
+    "Devolución Imp. Débitos": {
+        "raw_amount": 4729.0599999999995,
+        "taxes": {}
+    },
+    "Débito Automático de Servicio": {
+        "raw_amount": 1414130.8900000001,
+        "taxes": {}
+    },
+    "Débito Comisión Pago a Prov.": {
+        "raw_amount": 784.08,
+        "taxes": {}
+    },
+    "IIBB- Acreditaciones Bancarias": {
+        "raw_amount": 4150122.9699999997,
+        "taxes": {}
+    },
+    "IMPUESTO A LOS SELLOS": {
+        "raw_amount": 10987.52,
+        "taxes": {}
+    },
+    "IVA": {
+        "raw_amount": 57780.07999999997,
+        "taxes": {}
+    },
+    "Impuesto Débitos y Créditos/CR": {
+        "raw_amount": 926362.7000000002,
+        "taxes": {}
+    },
+    "Impuesto Débitos y Créditos/DB": {
+        "raw_amount": 2518822.2299999995,
+        "taxes": {}
+    },
+    "Intereses de Sobregiro": {
+        "raw_amount": 530844.48,
+        "taxes": {
+            "iva_10.5": 55738.670399999995,
+            "percep_iibb": 530.84448,
+            "percep_iva_1.5": 7962.6672
+        }
+    },
+    "Pago Automático de Préstamo": {
+        "raw_amount": 505777.9,
+        "taxes": {}
+    },
+    "Pago Cheque de Cámara Recibida": {
+        "raw_amount": 195885949.83999997,
+        "taxes": {}
+    },
+    "Pago Cámara SPV 24 hs.": {
+        "raw_amount": 2115162.71,
+        "taxes": {}
+    },
+    "Pago de Servicios": {
+        "raw_amount": 14489512.88,
+        "taxes": {}
+    },
+    "Percepción I.V.A. RG. 3337": {
+        "raw_amount": 8103.85,
+        "taxes": {}
+    },
+    "Préstamos Inversion Productiva": {
+        "raw_amount": 4455000.0,
+        "taxes": {}
+    },
+    "Rech. Cheques Falla Técnica": {
+        "raw_amount": 785580.52,
+        "taxes": {}
+    },
+    "SIPAP - Pago Cheque de Cámara": {
+        "raw_amount": 32240355.95,
+        "taxes": {}
+    },
+    "SIPAP - Pago Cámara SPV 24 hs.": {
+        "raw_amount": 1592003.2400000002,
+        "taxes": {}
+    },
+    "Transferencia por CBU": {
+        "raw_amount": 100501494.83,
+        "taxes": {}
+    },
+    "Trf. Masivas Pago Proveedores": {
+        "raw_amount": 119205508.50999992,
+        "taxes": {}
+    },
+    "Trf. Pago.Prov-Terceros O/Bcos": {
+        "raw_amount": 12187554.96,
+        "taxes": {
+            "iibb_acred_banc": 219375.98928,
+            "imp_creditos": 73125.32976000001
+        }
+    }
+}
