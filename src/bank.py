@@ -57,6 +57,7 @@ class Bank:
     def _get_tax(self, amount, modifier):
         return amount * modifier
 
+
     def _apply_taxes(self):
         for category in self.total_by_category:
             taxes = {
@@ -64,12 +65,30 @@ class Bank:
                     self.total_by_category[category],
                     self.concepts_map[category]['taxes'][tax]
                 ) for tax in self.concepts_map[category]['taxes']
+                if self.concepts_map[category]['taxes'][tax] is not None
             }
+
             self.total_by_category[category] = {
                 'raw_amount': self.total_by_category[category],
-                'taxes': taxes
-                
+                'taxes': taxes  
             }
+
+            # add imp_debitos if relevant
+            imp_deb = self.concepts_map[category]['taxes'].get('imp_debitos')
+            if imp_deb is None:
+                iibb_acred = self.total_by_category[category]['taxes'].get('iibb_acred_bank')
+                if iibb_acred:
+                    self.total_by_category[category]['taxes']['imp_debitos'] = iibb_acred * 0.006
+                else:
+                    self.total_by_category[category]['taxes']['imp_debitos'] = (
+                        sum(
+                            self.total_by_category[category]['taxes'][tax] for tax in
+                            self.total_by_category[category]['taxes']
+                        ) +
+                        self.total_by_category[category]['raw_amount']
+                    ) * 0.006
+
+
 
     def get_thirdparty_transfers(self):
         data = self.enriched_extract_data
@@ -107,7 +126,12 @@ class Bank:
         file_name = f'taxes/{self.name}.json'
         with open(file_name, 'w') as post:
             post.write(
-                dumps(self.total_by_category, indent=4, sort_keys=True, ensure_ascii=False)
+                dumps(
+                    self.total_by_category,
+                    indent=4,
+                    sort_keys=True,
+                    ensure_ascii=False
+                )
             )
 
     def load(self):

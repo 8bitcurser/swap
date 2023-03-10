@@ -3,12 +3,14 @@
         "raw_amount": 86020.5,
         "taxes": {
             "iibb_acred_banc": 1548.369,
-            "imp_creditos": 516.123
+            "imp_creditos": 516.123,
+            "imp_debitos": 528.509952
         }
     },
     "COMIS.TRANSFERENCIAS": {
         "raw_amount": 2530.0,
         "taxes": {
+            "imp_debitos": 18.38298,
             "iva_21": 531.3,
             "percep_iibb": 2.5300000000000002
         }
@@ -16,33 +18,41 @@
     "COMISIONES DATANET": {
         "raw_amount": 94.2,
         "taxes": {
+            "imp_debitos": 0.683892,
             "iva_21": 19.782
         }
     },
     "CRED BCA ELECTR INTERBANC EXEN": {
         "raw_amount": 204917000.0,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 1229502.0
+        }
     },
     "CRED BCA ELECTRONICA INTERBANC": {
         "raw_amount": 103929174.47999999,
         "taxes": {
             "iibb_acred_banc": 1870725.1406399996,
-            "imp_creditos": 623575.0468799999
+            "imp_creditos": 623575.0468799999,
+            "imp_debitos": 638540.84800512
         }
     },
     "Cobro Percepción IIBB": {
         "raw_amount": 536.72,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 3.22032
+        }
     },
     "Comisión Consulta Cámara": {
         "raw_amount": 700.0,
         "taxes": {
+            "imp_debitos": 5.082,
             "iva_21": 147.0
         }
     },
     "Comisión Mantenimiento Cuenta": {
         "raw_amount": 4706.0,
         "taxes": {
+            "imp_debitos": 35.040876,
             "iva_21": 988.26,
             "percep_iibb": 4.706,
             "percep_iva_3": 141.18
@@ -51,94 +61,128 @@
     "Comisión Riesgo Contigente": {
         "raw_amount": 516.0,
         "taxes": {
+            "imp_debitos": 3.74616,
             "iva_21": 108.36
         }
     },
     "Contras.Ints.Sobreg.": {
         "raw_amount": 2349.59,
         "taxes": {
+            "imp_debitos": 0.0,
             "iva_10.5": 246.70695
         }
     },
     "Credito DEBIN": {
         "raw_amount": 7547000.0,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 45282.0
+        }
     },
     "Crédito Transf. HomeBanking": {
         "raw_amount": 14600000.0,
         "taxes": {
             "iibb_acred_banc": 262800.0,
-            "imp_creditos": 87600.0
+            "imp_creditos": 87600.0,
+            "imp_debitos": 89702.40000000001
         }
     },
     "Crédito por Transferencia": {
         "raw_amount": 89556032.45,
         "taxes": {
             "iibb_acred_banc": 1612008.5840999999,
-            "imp_creditos": 537336.1947
+            "imp_creditos": 537336.1947,
+            "imp_debitos": 550232.2633728
         }
     },
     "DEB BCA ELECTR INTERBANC EXEN": {
         "raw_amount": 1000000.0,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 6000.0
+        }
     },
     "DEB BCA ELECTRONICA INTERBANC": {
         "raw_amount": 666200.8,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 39972.048
+        }
     },
     "DEB BCA ELECTRONICA INTRABANC": {
         "raw_amount": 4566105.17,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 273966.3102
+        }
     },
     "Deb. Pago de Sueldo": {
         "raw_amount": 8975093.0,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 538505.58
+        }
     },
     "Debito Transf. HomeBanking": {
         "raw_amount": 20750000.0,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 1245000.0
+        }
     },
     "Descto. Docum.- Acreditación": {
         "raw_amount": 76168604.92000002,
         "taxes": {
-            "iibb_acred_banc": 1371034.88856
+            "iibb_acred_banc": 1371034.88856,
+            "imp_debitos": 0.0
         }
     },
     "Devolución Imp. Débitos": {
         "raw_amount": 4729.0599999999995,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 28.374359999999996
+        }
     },
     "Débito Automático de Servicio": {
         "raw_amount": 1414130.8900000001,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 84847.8534
+        }
     },
     "Débito Comisión Pago a Prov.": {
         "raw_amount": 784.08,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 47.0448
+        }
     },
     "IIBB- Acreditaciones Bancarias": {
         "raw_amount": 4150122.9699999997,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 24900.73782
+        }
     },
     "IMPUESTO A LOS SELLOS": {
         "raw_amount": 10987.52,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 659.2512
+        }
     },
     "IVA": {
         "raw_amount": 57780.07999999997,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 346.6804799999998
+        }
     },
     "Impuesto Débitos y Créditos/CR": {
         "raw_amount": 926362.7000000002,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 5558.176200000001
+        }
     },
     "Impuesto Débitos y Créditos/DB": {
         "raw_amount": 2518822.2299999995,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 15112.933379999997
+        }
     },
     "Intereses de Sobregiro": {
         "raw_amount": 530844.48,
         "taxes": {
+            "imp_debitos": 3570.4599724799996,
             "iva_10.5": 55738.670399999995,
             "percep_iibb": 530.84448,
             "percep_iva_1.5": 7962.6672
@@ -146,53 +190,76 @@
     },
     "Pago Automático de Préstamo": {
         "raw_amount": 505777.9,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 30346.674
+        }
     },
     "Pago Cheque de Cámara Recibida": {
         "raw_amount": 195885949.83999997,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 11753156.990399998
+        }
     },
     "Pago Cámara SPV 24 hs.": {
         "raw_amount": 2115162.71,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 126909.76259999999
+        }
     },
     "Pago de Servicios": {
         "raw_amount": 14489512.88,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 869370.7728
+        }
     },
     "Percepción I.V.A. RG. 3337": {
         "raw_amount": 8103.85,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 48.6231
+        }
     },
     "Préstamos Inversion Productiva": {
         "raw_amount": 4455000.0,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 26730.0
+        }
     },
     "Rech. Cheques Falla Técnica": {
         "raw_amount": 785580.52,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 4713.48312
+        }
     },
     "SIPAP - Pago Cheque de Cámara": {
         "raw_amount": 32240355.95,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 1934421.3569999998
+        }
     },
     "SIPAP - Pago Cámara SPV 24 hs.": {
         "raw_amount": 1592003.2400000002,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 95520.19440000001
+        }
     },
     "Transferencia por CBU": {
         "raw_amount": 100501494.83,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 6030089.6898
+        }
     },
     "Trf. Masivas Pago Proveedores": {
         "raw_amount": 119205508.50999992,
-        "taxes": {}
+        "taxes": {
+            "imp_debitos": 7152330.510599995
+        }
     },
     "Trf. Pago.Prov-Terceros O/Bcos": {
         "raw_amount": 12187554.96,
         "taxes": {
             "iibb_acred_banc": 219375.98928,
-            "imp_creditos": 73125.32976000001
+            "imp_creditos": 73125.32976000001,
+            "imp_debitos": 74880.33767424001
         }
     }
 }
