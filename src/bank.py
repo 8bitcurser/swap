@@ -1,7 +1,7 @@
 from json import dumps
 from dataclasses import dataclass, field
 from src.constants import concepts
-from src.helpers import read_extract, convert_csv_to_xls
+from src.helpers import read_extract
 
 
 @dataclass
